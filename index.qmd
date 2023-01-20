@@ -1,0 +1,153 @@
+---
+title: "Analisis Pengaruh Produksi dan Konsumsi Kedelai Terhadap Ketergantungan Impor Kedelai Di Indonesia"
+subtitle: "Metode Penelitian Politeknik APP Jakarta"
+author: "Nancy Ortega Sitanggang"
+date: 2023-01-20
+number-sections: true
+format:
+  html: default
+  docx: default
+editor: visual
+
+---
+
+![](poltekapp.jpg){width="314"}
+\-\--
+
+# Analisis  Pengaruh Produksi dan Konsumsi Domestik Kedelai Terhadap Ketergantungan Impor Kedelai Di Indonesia
+
+## Pendahuluan {style="blue"}
+
+### Latar belakang
+
+Indonesia merupakan negara yang menganut sistem perekonomian terbuka sehingga sangat mengandalkan kegiatan perdagangan internasional. Perdagangan Internasional adalah kegiatan untuk memperdagangkan berbagai output berupa barang dan jasa yang dihasilkan oleh suatu negara untuk dapat dijual ke luar negeri serta mendatangkan barang dan jasa dari luar negeri untuk kemudian didatangkan ke negara tersebut dengan tujuan memenuhi kebutuhan dalam negeri (Pambudi, 2011). Perdagangan Internasional merupakan aspek penting dalam perekonomian setiap negara. Tujuan dari perdagangan global adalah untuk meningkatkan kesejahteraan masyarakat disuatu negara. Hubungan yang saling mempengaruhi antar negara satu dengan negara lainnya dapat tercipta karena adanya perekonomian dalam negeri dan luar negeri, salah satunya adalah berupa pertukaran barang dan jasa antar negara. Tidak adanya batasan wilayah perdagangan di dunia dapat memperluas pangsa pasar ke negara lain (Iswandari, 2018). Indonesia pada saat ini termasuk negara produsen kedelai keenam terbesar di dunia setelah Amerika Serikat, Brasil, Argentina, Cina, dan India. Namun, berdasarkan data pemerintah Indonesia malah banyak  melakukan impor sejak lama. Berdasarkan latar belakang maka penulis tertarik untuk melakukan penelitian tentang "Analisis Pengaruh Produksi dan Konsumsi Kedelai Terhadap Ketergantungan Impor Kedelai Di Indonesia".
+
+### Batasan Masalah
+
+• Penelitian mengambil referensi data dengan rentang tahun 2016-2018 dari Badan Pusat Statistik (BPS) dan dari banyak jurnal penelitian yang membahas tentang impor kedelai
+
+• Laporan ini membahas tentang masalah yang sudah sering dialami oleh Indonesia yaitu ketergantungan impor kedelai
+
+• Variabel yang menjadi faktor dari ketergantungan impor kedelai yang dibahas adalah produksi dan permintaan domestik kedelai
+
+• Maka dari itu penelitian ini bertujuan untuk mengetahui bagaimana pengaruh produksi dan konsumsi kedelai terhdapa impor kedelai Indonesia
+
+### Rumusan masalah
+
+• Bagaimana impor kedelai di Indonesia?
+
+• Berapa volume impor Indonesia dari tahun 2010-2020?
+
+• Bagaimana produksi domestik kedelai di Indonesia?
+
+• Bagaimana konsumsi domestik kedelai di indonesia?
+
+• Bagaimana produksi dan konsumsi domestik mempengaruhi impor kedelai Indonesia?
+
+### Tujuan dan manfaat penelitian
+
+• Tujuan utama dari penelitian dilakukan adalah memenuhi tugas pengganti Ujian Akhir Semester, untuk mata kuliah Metodologi Penelitian.
+
+• Manfaat dari penelitian ini adalah untuk mengetahui bagaimana pengaruh produksi dan permintaan domestik kedelai terhadap ketergantungan impor kedelai di Indonesia
+
+### Package
+
+```{r}
+library('readxl')
+library('tidyverse')
+```
+
+## Studi pustaka
+
+### Perdagangan Internasional
+
+Secara umum perdagangan internasional merupakan sarana untuk melakukan pertukaran barang dan jasa internasional. Dalam lima puluh tahun terakhir, perdagangan internasional telah tumbuh dan berkembang secara drastis dan dalam ukuran yang besar. Hal ini disebabkan oleh adanya kerjasama yang dilakukan oleh berbagai negara untuk menghilangkan proteksi perdagangan dan adanya keinginan untuk mempromosikan perdagangan barang dan jasa secara bebas. Perdagangan didefinisikan sebagai pertukaran barang dan jasa atau uang yang saling menguntungkan atau memberikan manfaat dan didasarkan atas kehendak sukarela dari masing-masing pihak. Sedangkan perdagangan internasional dapat didefinisikan sebagai transaksi bisnis antara pihak-pihak dari lebih daripada satu negara. Transaksi bisnis ini contohnya adalah ekspor produk dari suatu negara ke negara lain, investasi pembangunan pabrik di negara asing, pembelian bahan baku dari luar negeri, memproduksi salah satu bagian produk di luar negeri dan merakitnya di dalam negeri. Perdagangan internasional adalah perdagangan yang dilakukan oleh penduduk suatu Negara dengan penduduk Negara lain atas dasar kesepakatan bersama (Menurut Setiawan dan Lestari, 2011). Perdagangan internasional menjadi hal yang penting, disamping karena adanya perdagangan bebas dan globalisasi ekonomi, disadari pula bahwa tidak ada satu negarapun di dunia yang mampu memenuhi semua kebutuhannya tanpa melakukan perdagangan atau bisnis dengan negara lain (Wahono Diphayana, 2018). Perdagangan internasional diwujudkan melalui ekspor dan impor.
+
+### Impor
+
+Impor adalah kegiatan suatu negara untuk mendatangkan barang dari luar negeri. Kegiatan ini dilakukan untuk diperjualbelikan di dalam negeri. Buku Pajak Lalu Lintas Barang karya Astri Warih Anjarwi mengunkapkan bahwa, importir harus mematuhi ketentuan kepabeanan yang berlaku. Hal ini dikarenakan barang yang masuk dalam daerah pabean melalui sarana pengangkut antar negara akan diperlakukan sebagai barang impor dan terutang bea masuk sesuai dengan Undang-Undang Kepabeanan. Kegiatan impor memiliki tujuan utama memenuhi kebutuhan masyarakat dengan mendatangkan produk atau barang yang belum ada di dalam negeri dari luar negeri. Impor merupakan kebocoran dalam pendapatan nasional. Jumlah impor ditentukan oleh kesanggupan atau kemampuan dalam menghasilkan barang-barang yang bersaing dengan buatan luar negeri. Jika kemampuan produksi rendah, jumlah impor akan naik begitu juga sebaliknya. Jadi, dalam hal ini produksi memiliki pengaruh terhadap impor kedelai (Deliarnov, 1995)
+
+### Produksi dan Konsumsi
+
+Kedelai dapat ditanam dengan cara yang sederhana, tetapi produksi di dalam negeri hampir tidak mungkin untuk memenuhi permintaan yang terus meningkat. Jumlah industri pangan berbahan baku kedelai yang semakin bertambah dan ditambah dengan meningkatnya pertumbuhan penduduk mengakibatkan permintaan kedelai di Indonesia terus meningkat. Tingkat konsumsi masyarakat Indonesia yang tinggi terhadap kedelai, berbanding terbalik dengan kemampuan produksi kedelai di Indonesia. Dalam kurun waktu lima tahun ( tahun 2010-2014) kebutuhan kedelai setiap tahunnya ± 2.300.000 ton biji kering (Ditjen tanaman pangan, 2013). Kebutuhan kedelai di Indonesia setiap tahun selalu meningkat seiring dengan pertumbuhan penduduk. Namun perkembangan tanaman kedelai selama 10 tahun terakhir menunjukan penurunan yang cukup besar, lebih dari 50% baik dalam luasan areal maupun produksinya (Adisarwanto, 2006).
+
+### Kerangka Penelitian
+
+Gambar dibawah mmerupakan kerangka pemikiran dari penilitian yang dilakukan:
+
+![](Kerangka%20Penelitian.png){fig-align="center" width="303" height="142"}
+
+## Metode penelitian
+
+### Data
+
+Jenis data yang digunakan dalam penelitian ini dikategorikan sebagai data sekunder yang diperoleh dari beberapa sumber dengan cara mengambil data-data statistik yang telah ada. Data yang dikumpulkan berupa data volume beserta nilai impor kedelai, produksi kedelai domestik, dan konsumsi kedelai domestik. Data tersebut diperoleh dari Badan Pusat Statistik (BPS), Departemen Pertanian, Food and Agriculture Organization (FAO) serta dari penelitian-penelitian terdahulu yang terkait dengan penelitian ini. Dan juga melalui Referensi studi kepustakaan melalui jurnal, artikel, dan internet yang masih relevan dengan penelitian ini.
+
+Berikut data impor, produksi, dan konsumsi kedelai:
+
+```{r}
+
+dat<-read_excel('DATA.xlsx')
+
+```
+
+| Tahun | Impor (satuan ton) | Produksi Domestik (satuan ton) | Konsumsi Domestik (satuan ton) |
+|:----------------:|:----------------:|:----------------:|:-----------------:|
+| 2010  |     1.740.000      |            907.031             |           2.329.041            |
+| 2011  |     1.250.000      |            843.838             |           2.000.615            |
+| 2012  |     1.210.000      |            843.153             |           2.428.100            |
+| 2013  |     1.790.000      |            779.992             |           2.490.490            |
+| 2014  |     1.180.000      |            954.997             |           2.552.890            |
+| 2015  |     2.260.000      |            963.183             |           1.560.000            |
+| 2016  |     2.260.000      |            859.653             |           2.480.000            |
+| 2017  |     2.670.000      |            538.728             |           2.720.000            |
+| 2018  |     2.590.000      |            982.598             |           2.940.000            |
+| 2019  |     2.670.000      |            424.000             |           2.960.000            |
+| 2020  |     2.180.000      |            613.000             |           2.870.000            |
+
+```{r}
+dat$Konsumsi_dan_Impor <- plot(dat$Konsumsi,dat$Impor,xlab = 'Konsumsi',ylab = 'Impor')
+```
+
+```{r}
+dat$Produksi_dan_Impor <- plot(dat$Produksi,dat$Impor,xlab = 'Produksi',ylab = 'Impor')
+```
+
+### Metode analisis
+
+Analisis kuantitatif dilakukan dengan menggunakan metode Regresi Linear Berganda. Untuk memudahkan dalam pengolahan data yang digunakan dalam penelitian ini, maka data tersebut dimasukkan ke dalam Microsoft Excel dan diolah dengan menggunakan R. Analisis regresi ini bertujuan untuk mengetahui koefisien masing-masing variabel yang mempengaruhi Impor Kedelai. Secara umum model persamaan linear sebagai berikut: Variabel--variabel X adalah variabel bebas (independen variabel), sedangkan variabel tidak bebas (dependen variabel) yang digunakan adalah Y. Metode ini digunakan untuk meminimalisir jumlah kuadrat kesalahan dengan mengestimasi suatu garis regresi. Metode Ordinary Least Square (OLS) merupakan metode dasar yang digunakan untuk menyelesaikan suatu masalah dalam data dengan penyelesaian berbentuk model regresi linier. Metode regresi univariat atau Ordinary Least Square (OLS) menggunakan 2 variabel independen. Penelitian ini bermaksud mencari hubungan antara hwy dan cty. Spesifikasi yang dilakukan adalah:
+
+$$
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+$$ di mana $y_t$ adalah Impor, $x_t$ adalah Produksi dan Konnsumsi.
+
+## Pembahasan
+
+### Pembahasan masalah
+
+Konsumsi kedelai nasional memiliki trend peningkatan pada setiap tahunnya. Penyebab dari peningkatan pada konsumsi adalah tingginya permintaan masyarakat terhadap kedelai sebagai bahan pangan sumber protein nabati dan adanya peningkatan jumlah penduduk Indonesia. Produksi juga mengalami peningkatan namun, peningkatan pada konsumsi lebih tinggi dibandingkan dengan peningkatan pada prooduksi. Adanya gap antara produksi dan konsumsi kedelai yang cukup siginifikan memengaruhi pemenuhan ketersediaan kedelai nasional dimana produksi kedelai dalam negeri hanya mampu mencukupi kebutuhan domestik tidak lebih dari 15 persen. Oleh karena itu sebagian besar kebutuhan kedelai dalam negeri atau 86,95 persen harus dipenuhi dari impor.
+
+Setiap tahunnya rata-rata Indonesia mengimpor kedelai sebanyak 1.981.818,182 ton dari tahun 2010 sampai dengan 2020. Separuh diantaranya impor kedelai berasal dari negara maju. Pada tahun 1996, volume impor kedelai Indonesia sebesar 1.705.583 ton. .Produksi rata-rata menurun sebesar 8,9%/ tahun. Produksi stagnan terjadi pada 2010-2020. Rata-rata pertumbuhan produksi kedelai Indonesia selama periode 2010-2020 yaitu sebesar minus 3,54 persen pertahunnya. Semakin merosotnya produksi kedelai dalam negeri dengan konsekuensi mengimpor kedelai dalam jumlah yang sangat besar telah mengancamketahanan pangan nasional (Supadi, 2009:100)
+
+### Analisis masalah
+
+Hasil regresinya yaitu:
+
+```{r}
+reg1<-lm(Impor~ Produksi+Konsumsi,data=dat)
+summary(reg1)
+```
+
+## Kesimpulan
+
+Berdasarkan hasil regresi dapat dilihat bahwa produksi kedelai domestik secara signifikan negatif memengaruhi volume impor kedelai Indonesia. Hal ini dapat ditunjukkan dari probabilitas produksi kedelai domestik sebesar -1.152. Berdasarkan hasil estimasi, variabel produksi kedelai domestik ini memberikan interpretasi bahwa ketika produksi kedelai domestik mengalami penurunan sebesar 1 persen maka volume impor kedelai Indonesia akan menurun sebesar -1.152. Sedangkan untuk konsumsi kedelai domestik, secara signifikan positif memengaruhi volume impor kedelai Indonesia. Hal ini dapat ditunjukkan dari probabilitas konsumsi kedelai domestik sebesar 2.793. Berdasarkan hasil estimasi, variabel produksi kedelai domestik ini memberikan interpretasi bahwa ketika konsumsi kedelai domestik mengalami penurunan sebesar 1 persen maka volume impor kedelai Indonesia akan meningkat sebesar 2.793.
+
+## Referensi
+
+Aldillah, R. (2015). Proyeksi Produksi dan Konsumsi Kedelai Indonesia. *Jurnal Ekonomi Kuantitaf Terapan*, *8 No.1*, 9--23.
+
+Mahdi, N. N., & Suharno. (2019). ANALISIS FAKTOR-FAKTOR YANG MEMENGARUHI IMPOR KEDELAI DI INDONESIA. *Forum Agribisnis: Agribusiness Forum*, *Vol 9 No.2*, hal 160-184.
+
+Setyawan, G., & Huda, S. (2). Analisis pengaruh produksi kedelai, konsumsi kedelai, pendapatan per kapita, dan kurs terhadap impor kedelai di Indonesia. : *: Jurnal Ekonomi dan Manajemen*, *Volume 19*(2), Volume 19.
+
+Yoga, A. B., & Saskara, I. A. N. (2013). PENGARUH JUMLAH PRODUKSI KEDELAI DALAM NEGERI , HARGA KEDELAI DALAM NEGERI DAN KURS DOLLAR AMERIKA TERHADAP VOLUME IMPOR KEDELAI INDONESIA. *E-Jurnal EP Unud*, *2 \[3\]*, 129--134.
